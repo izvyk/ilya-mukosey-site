@@ -1,13 +1,14 @@
+@import 'variables';
+
 header {
     position: sticky;
     display: flex;
     align-items: center;
     padding: 5px;
-
-    // svg {
-    //     height: 50px;
-    //     width: auto;
-    // }
+    top: 0;
+    z-index: 1;
+    background-color: $defaultBackgroundColor;
+    border-bottom: 2px #000 solid;
 
     svg {
         height: 50px;
@@ -20,25 +21,4 @@ header {
     .languageSwitcher {
         margin: 0 0 0 auto;
     }
-
-
-    // .logoContainer {
-    //     position: relative;
-    //     a {
-    //         position: static;
-    //     }
-    // }
-
-    // .logoContainer span {
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     height: 100%;
-    //     width: 100%;
-    //     z-index: 1;
-
-    //     // &:hover {
-    //     //     poi
-    //     // }
-    // }
 }
