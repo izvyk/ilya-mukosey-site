@@ -1,0 +1,44 @@
+header {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+
+    // svg {
+    //     height: 50px;
+    //     width: auto;
+    // }
+
+    svg {
+        height: 50px;
+        // width: auto;
+        &:hover #creature-left {
+            x: 9;
+        }
+    }
+
+    .languageSwitcher {
+        margin: 0 0 0 auto;
+    }
+
+
+    // .logoContainer {
+    //     position: relative;
+    //     a {
+    //         position: static;
+    //     }
+    // }
+
+    // .logoContainer span {
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     height: 100%;
+    //     width: 100%;
+    //     z-index: 1;
+
+    //     // &:hover {
+    //     //     poi
+    //     // }
+    // }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <title>{{ title }}</title>
+    <link rel="icon" href="/assets/images/favicon.svg">
+    {% if style is defined %}
+        <link rel="stylesheet" type="text/css" href="{{ style }}">
+    {% endif %}
+    {% if script is defined %}
+        <script src="{{ script }}"></script>
+    {% endif %}
+</head>
+<body>
+    <header>
+        {% block header %}
+            {% include 'default-header.njk' %}
+        {% endblock %}
+    </header>
+
+    <main>
+        {% block content %}
+            {{ content | safe }}
+        {% endblock %}
+    </main>
+
+    <footer>
+        {% block footer %}
+            Default footer
+        {% endblock %}
+    </footer>
+</body>
+</html>

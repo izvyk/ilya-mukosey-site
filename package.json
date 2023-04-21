@@ -1,0 +1,20 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "html-minifier": "^4.0.0",
+    "posthtml-minify-classnames": "^0.3.0",
+    "eleventy-sass": "^2.2.1"
+  },
+  "dependencies": {}
+}

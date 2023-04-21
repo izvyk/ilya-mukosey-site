@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="walkingfish" viewBox="0 0 41 15">
+    <defs>
+        <g id="leg">
+            <rect x="14" y="11" width="2" height="1"/>
+            <rect x="14" y="9" width="1" height="3"/>
+        </g>
+    </defs>
+    <rect id="filling" width="100%" height="100%" fill="#fff"/>
+
+    <g fill='#000'>
+        <rect x="12" y="4" width="18" height="6"/>
+        <rect x="9" y="4" width="4" height="6"/>
+        <rect x="18" y="2" width="6" height="3"/>
+    </g>
+    
+    <use id="leg1" href="#leg">
+        <animate 
+        attributeName="x"
+        values="0;0;1;0;0"
+        dur=".6s"
+        repeatCount="indefinite"
+        />
+    </use>
+    <use id="leg2" x="3" href="#leg">
+        <animate 
+        attributeName="x"
+        values="3;4;4;3;3"
+        dur=".6s"
+        repeatCount="indefinite"
+        />
+    </use>
+    <use id="leg3" x="7" href="#leg">
+        <animate 
+        attributeName="x"
+        values="7;7;8;7;7"
+        dur=".6s"
+        repeatCount="indefinite"
+        />
+    </use>
+    <use id="leg4" x="10" href="#leg">
+        <animate 
+            attributeName="x"
+            values="10;11;11;10;10"
+            dur=".6s"
+            repeatCount="indefinite"
+        />
+    </use>
+
+    <g fill='#fff'>
+        <rect x="13" y="5" width="16" height="4"/>
+        <rect x="8" y="6" width="2" height="2"/>
+        <rect x="11" y="6" width="1" height="2"/>
+        <rect x="11" y="9" width="1" height="2"/>
+        <rect x="11" y="3" width="1" height="2"/>
+        <rect x="19" y="3" width="4" height="1"/>
+    </g>
+
+    <g fill='#000'>
+        <rect x="27" y="6" width="1" height="1"/>
+        <rect x="26" y="8" width="1" height="2"/>
+    </g>
+
+
+    <svg id="ground" y="13" fill="#000">
+        <g id="row">
+            <rect x="2" y="1" height="1" width="2"/>
+            <rect x="4" height="1" width="2"/>
+            <rect x="6" y="1" height="1" width="2"/>
+            <rect x="8" width="1" height="1"/>
+            <rect x="9" y="1" height="1" width="2"/>
+        </g>
+        <rect x="11" height="1" width="1"/>
+        <use href="#row" x="10"/>
+        <use href="#row" x="17"/>
+        <use href="#row" x="24"/>
+        <use href="#row" x="31"/>
+
+        <use href="#row" x="-7"/>
+        <animate 
+            attributeName="x"
+            values="0;1;1;0;0"
+            dur=".6s"
+            repeatCount="indefinite"
+        />
+    </svg>
+</svg>

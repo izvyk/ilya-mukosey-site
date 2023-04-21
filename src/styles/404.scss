@@ -1,0 +1,17 @@
+@import 'normalize';
+
+@import 'global';
+@import 'links';
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+svg {
+    max-width: 200px;
+    min-width: 100px;
+}

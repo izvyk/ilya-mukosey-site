@@ -1,0 +1,73 @@
+@import 'variables';
+
+$imageContainerSize: 120px;
+
+div.cardContainer {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+div.card {
+    position: relative;
+    width: $imageContainerSize;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+
+    div.imageContainer {
+        position: relative;
+        height: $imageContainerSize;
+
+        img {
+            display: block;
+            width: 100%;
+
+            // chrome rendering bug workaround
+            padding: 1px; 
+            box-sizing: border-box;
+        }
+
+        svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            circle {
+                transition: $link-transition-time;
+            }
+        }
+    }
+
+    &.active a {
+        color: $link-active-color;
+    }
+
+    a {
+        position: static;
+        display: inline-block;
+        padding-top: 4px;
+
+        span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+    }
+
+    &.active div.imageContainer {
+        .A {
+            r: 77%;
+        }
+
+        .B {
+            r: 47%;
+        }
+    }
+}
