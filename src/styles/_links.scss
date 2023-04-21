@@ -2,19 +2,19 @@
 
 a {
     position: relative;
-    transition: $link-transition-time;
+    transition: $defaultTransitionTime;
     text-decoration: none;
     font-weight: bold;
-    color: $link-base-color;
+    color: $linkInactiveColor;
 
     &:hover {
-        color: $link-active-color;
+        color: $linkActiveColor;
     }
 
     &:hover::before {
         // transform-origin: bottom left;
         transform: scaleX(1);
-        background-color: $link-active-color;
+        background-color: $linkActiveColor;
     }
 
     &::before {
@@ -25,9 +25,9 @@ a {
         height: 1px;
         bottom: 0;
         left: 0;
-        background-color: $link-base-color;
+        background-color: $linkInactiveColor;
         // transform-origin: bottom right;
         transform: scaleX(0);
-        transition: $link-transition-time ease-out;
+        transition: $defaultTransitionTime ease-out;
     }
 }
