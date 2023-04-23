@@ -1,5 +1,5 @@
 ---
 title: ['Lost in Translation', 'Трудности перевода']
-categories: [media, education&culture]
+categories: [media, educationAndCulture]
 designEnd: 2016
 ---

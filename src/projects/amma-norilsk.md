@@ -1,6 +1,6 @@
 ---
 title: [AMMA Norilsk, АММА Норильск]
-categories: [buildings, interiors, education&culture]
+categories: [buildings, interiors, educationAndCulture]
 location: Krasnoyarsk region, Russia, Norilsk, Komsomolskaia, 37
 footprint: 2700 sq.m.
 grossArea: 8500 sq.m.

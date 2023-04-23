@@ -1,5 +1,5 @@
 ---
 title: ['Olymp Quarter', 'UP!квартал Олимп']
-categories: [territories, small objects]
+categories: [territories, smallObjects]
 designEnd: 2015
 ---

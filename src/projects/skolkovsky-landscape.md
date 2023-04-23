@@ -1,5 +1,5 @@
 ---
 title: ['Skolkovsky Landscape', 'Ландшафт Сколковский']
-categories: [territories, small objects]
+categories: [territories, smallObjects]
 designEnd: 2016
 ---

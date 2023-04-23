@@ -1,5 +1,5 @@
 ---
 title: ['SukkaBench', 'СукКАМЕЙКА']
-categories: [small objects, concepts]
+categories: [smallObjects, concepts]
 designEnd: 2011
 ---

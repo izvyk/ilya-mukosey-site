@@ -1,5 +1,5 @@
 ---
 title: ['Winged Shed', 'Крылатый сарай']
-categories: [small objects, exhibitions&festivals, concepts, media, education&culture]
+categories: [smallObjects, exhibitionsAndFestivals, concepts, media, educationAndCulture]
 designEnd: 2017
 ---

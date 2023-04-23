@@ -1,5 +1,5 @@
 ---
 title: ['Mukosey-Translator', 'Мукосей-транслятор']
-categories: [media, education&culture]
+categories: [media, educationAndCulture]
 designEnd: 2019
 ---

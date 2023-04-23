@@ -1,5 +1,5 @@
 ---
 title: ['Svetlanovsky Landscape', 'Ландшафт Светлановский']
-categories: [territories, small objects]
+categories: [territories, smallObjects]
 designEnd: 2016
 ---

@@ -1,5 +1,5 @@
 ---
 title: ['Finger to the sky', 'Пальцем в небо']
-categories: [media, education&culture]
+categories: [media, educationAndCulture]
 designEnd: 2018
 ---

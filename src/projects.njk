@@ -1,10 +1,12 @@
 ---
 title: 'mukosey: Проекты | Projects'
-layout: 'base.njk'
 style: '/styles/projects.css'
 script: '/scripts/projects.js'
 ---
 
+{% extends 'base.njk' %}
+
+{% block content %}
 <div class="cardContainer">
     {% for project in collections.project | reverse %}
         <div class="card" data-categories="{{ project.data.categories | replaceCommasWithWhitespaces }}">
@@ -21,3 +23,24 @@ script: '/scripts/projects.js'
         </div>
     {% endfor %}
 </div>
+{% endblock %}
+
+{% block footer %}
+    <div class="menuCategories">
+        {% for category, name in [['buildings', 'Buildings'], ['territories', 'Territories'], ['transport', 'Transport'], ['interiors', 'Interiors'], ['smallObjects', 'Small objects'], ['exhibitionsAndFestivals', 'Exhibitions & festivals'], ['concepts', 'Concepts'], ['media', 'Media'], ['educationAndCulture', 'Education & culture']] %}
+            <a href="#" data-category="{{ category }}">{{ name }}</a>
+        {% endfor %}
+    </div>
+    {# {{ super() }} #}
+{% endblock %}
+{# 
+0. Здания buildings
+1. Территории territories
+2. Транспорт transport
+3. Интерьеры interiors
+4. Жилые интерьеры 
+5. Малые формы smallObjects
+6. Выставки, фестивали exhibitionsAndFestivals
+7. Идеи concepts
+8. Медиа media
+9. Образование и Культура educationAndCulture #}

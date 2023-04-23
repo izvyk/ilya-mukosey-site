@@ -1,5 +1,5 @@
 ---
 title: ['Leninka', 'Ленинка']
-categories: [territories, small objects, education&culture]
+categories: [territories, smallObjects, educationAndCulture]
 designEnd: 2016
 ---

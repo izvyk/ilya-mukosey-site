@@ -1,5 +1,5 @@
 ---
 title: ['Liquid Light', 'Жидкий свет']
-categories: [small objects, concepts]
+categories: [smallObjects, concepts]
 designEnd: 2009
 ---

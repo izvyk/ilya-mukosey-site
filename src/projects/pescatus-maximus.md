@@ -1,5 +1,5 @@
 ---
 title: ['Pescatus Maximus', 'Большая рыба']
-categories: [small objects]
+categories: [smallObjects]
 designEnd: 2008
 ---

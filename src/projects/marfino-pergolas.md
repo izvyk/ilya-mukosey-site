@@ -1,5 +1,5 @@
 ---
 title: ['Marfino Pergolas', 'Беседки в Марфино']
-categories: [small objects]
+categories: [smallObjects]
 designEnd: 2010
 ---

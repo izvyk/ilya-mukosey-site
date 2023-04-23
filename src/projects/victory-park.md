@@ -1,5 +1,5 @@
 ---
 title: ['Victory Park', 'Парк Победы']
-categories: [territories, small objects, concepts]
+categories: [territories, smallObjects, concepts]
 designEnd: 2014
 ---

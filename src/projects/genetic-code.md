@@ -1,5 +1,5 @@
 ---
 title: ['Genetic Code', 'Генетический код']
-categories: [exhibitions&festivals, concepts, media]
+categories: [exhibitionsAndFestivals, concepts, media]
 designEnd: 2014
 ---

@@ -1,5 +1,5 @@
 ---
 title: ['Useful and Beautiful Architecture', 'О полезной и красивой архитектуре']
-categories: [media, education&culture]
+categories: [media, educationAndCulture]
 designEnd: 2016
 ---

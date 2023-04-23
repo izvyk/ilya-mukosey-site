@@ -8,7 +8,7 @@ header {
     top: 0;
     z-index: 2;
     background-color: $defaultBackgroundColor;
-    border-bottom: 2px #000 solid;
+    border-bottom: $defaultElementBorder;
 
     a:hover, a:focus {
         #creature-left {

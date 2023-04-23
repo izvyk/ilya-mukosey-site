@@ -1,5 +1,5 @@
 ---
 title: ['Pandemic Readings', 'Пандемические чтения']
-categories: [media, education&culture]
+categories: [media, educationAndCulture]
 designEnd: 2020
 ---

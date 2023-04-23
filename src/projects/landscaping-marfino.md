@@ -1,5 +1,5 @@
 ---
 title: ['Landscaping Marfino', 'Ландшафт в Марфино']
-categories: [territories, small objects]
+categories: [territories, smallObjects]
 designEnd: 2011
 ---

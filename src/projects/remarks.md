@@ -1,5 +1,5 @@
 ---
 title: ['Remarks', 'Реплики']
-categories: [media, education&culture]
+categories: [media, educationAndCulture]
 designEnd: 2019
 ---

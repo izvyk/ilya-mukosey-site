@@ -1,5 +1,5 @@
 ---
 title: ['Arctic Cargo', 'Arctic Cargo']
-categories: [territories, small objects, exhibitions&festivals, concepts, media, education&culture]
+categories: [territories, smallObjects, exhibitionsAndFestivals, concepts, media, educationAndCulture]
 designEnd: 2012
 ---

@@ -1,5 +1,5 @@
 ---
 title: ['Novoe Tushino', 'Новое Тушино']
-categories: [territories, small objects]
+categories: [territories, smallObjects]
 designEnd: 2017
 ---

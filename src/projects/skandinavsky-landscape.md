@@ -1,5 +1,5 @@
 ---
 title: ['Skandinavsky Landscape', '«Скандинавский» ландшафт']
-categories: [territories, small objects]
+categories: [territories, smallObjects]
 designEnd: 2019
 ---

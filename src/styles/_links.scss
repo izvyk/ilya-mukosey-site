@@ -7,7 +7,7 @@ a {
     font-weight: bold;
     color: $linkInactiveColor;
 
-    &:hover {
+    &:hover, &.active {
         color: $linkActiveColor;
 
         &::before {

@@ -8,3 +8,20 @@
 main {
     border: 1px solid red;
 }
+
+footer {
+    position: sticky;
+    bottom: 0;
+    padding: 5px;
+    z-index: 2;
+    background-color: $defaultBackgroundColor;
+    border-top: $defaultElementBorder;
+
+    .menuCategories {
+        display: flex;
+        justify-content: center;
+        gap: 5px 20px;
+        flex-wrap: wrap;
+        flex: 1;
+    }
+}

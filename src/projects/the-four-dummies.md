@@ -1,5 +1,5 @@
 ---
 title: ['The Four Dummies', 'Четыре болванки']
-categories: [territories, small objects, exhibitions&festivals]
+categories: [territories, smallObjects, exhibitionsAndFestivals]
 designEnd: 2015
 ---
