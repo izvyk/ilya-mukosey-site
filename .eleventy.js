@@ -28,8 +28,8 @@ module.exports = function (eleventyConfig) {
     return String(list).replaceAll(',', ' ');
   });
 
-  eleventyConfig.addFilter('removeSlashes', (str) => {
-    return str.replaceAll('/', '');
+  eleventyConfig.addFilter('toUpper', (str) => {
+    return str.toUpperCase();
   });
 
   eleventyConfig.addPassthroughCopy('./src/assets');

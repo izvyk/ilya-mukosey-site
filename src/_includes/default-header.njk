@@ -5,7 +5,12 @@
     {# <img src="/assets/images/favicon.svg" alt=""> #}
     {# <a href="/"><span></span></a> #}
 {# </div> #}
+{# <h1>MUKOSEY.COM /</h1> #}
+<div class="headerLinks">
+    {% for section in ['projects', 'awards', 'press'] %}
+        <a href="/{{ section }}" {% if section in page.url %} class="active" {% endif %}>{{ section | toUpper }}</a>
+    {% endfor %}
+</div>
 
-<a href="/">mukosey</a> / <a href="{{ page.url }}">{{ page.url | removeSlashes }}</a>
 {# <span>mukosey{{page.url}}</span> #}
 <p class="languageSwitcher"> <a href="">Language</a></p>
