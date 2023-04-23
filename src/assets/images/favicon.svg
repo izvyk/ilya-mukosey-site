@@ -8,7 +8,7 @@
             <rect x="1" y="9" width="1" height="3"/>
         </g>
         <use x="3" href="#leg"/>
-        <g fill="#fff" stroke="red" stroke-width=".1">
+        <g fill="#fff">
             <rect x="1" y="1" width="2" height="1"/>
             <rect x="4" y="1" width="1" height="2"/>
             <rect x="1" y="4" width="4" height="1"/>
