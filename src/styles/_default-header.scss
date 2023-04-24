@@ -22,7 +22,7 @@ header {
     #logoLink { 
         aspect-ratio: 1;
 
-        &:hover, &:focus {
+        &:hover, &:focus-visible {
             #creature-left {
                 x: 9;
             }

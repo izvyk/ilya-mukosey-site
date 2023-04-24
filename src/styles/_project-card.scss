@@ -44,7 +44,7 @@ $imageContainerSize: 125px;
     }
 
     &.active a,
-    a:focus {
+    a:focus-visible {
         color: $linkActiveColor;
     }
 
@@ -64,7 +64,7 @@ $imageContainerSize: 125px;
             transition: $defaultTransitionTime;
         }
 
-        &:focus {
+        &:focus-visible {
             outline: none;
 
             span {

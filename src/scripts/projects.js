@@ -4,7 +4,6 @@ window.addEventListener('DOMContentLoaded', () => {
         span.addEventListener('mouseenter', _ => {
             card.classList.add('active');
             document.querySelectorAll('.menuCategories a').forEach(cat => {
-                // console.log(card.dataset.categories, cat.dataset.category);
                 if (card.dataset.categories.includes(cat.dataset.category)) {
                     cat.classList.add('active');
                 }
