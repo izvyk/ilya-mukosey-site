@@ -1,23 +1,73 @@
 ---
 layout: 'base.njk'
+style: '/styles/project.css'
 ---
 
+{% if description is defined %}
+    <section class="description">
+        <h1>Description</h1>
+        <div class="content">
+            {% for paragraph in description %}
+                {{ paragraph }} <br>
+            {% endfor %}
+        </div>
+    </section>
+{% endif %}
+
+{% if referenceLinks is defined %}
+    <section class="links">
+        <h1>Links</h1>
+        <ul class="content">
+            {% for name, link in referenceLinks %}
+            <li><a href="{{ link }}">{{ name }}</a></li>
+            {% endfor %}
+        </ul>
+    </section>
+{% endif %}
+
 {% if youtubeLinks is defined %}
-    {% for link in youtubeLinks %}
-        <iframe width="560" height="315" src="{{ link | embeddableYoutubeLink }}" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    {% endfor %}
+    <section class="video">
+        <h1>Videos</h1>
+        <div class="content">
+            {% for link in youtubeLinks %}
+                <iframe width="560" height="315" src="{{ link | embeddableYoutubeLink }}" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            {% endfor %}
+        </div>
+    </section>
 {% endif %}
 
 {% if audios is defined %}
-    {% for audio in audios %}
-        <audio src="/assets/audio/{{ audio }}" preload="metadata" controls> {# controlsList="play timeline volume playbackSpeed" #}
-            Sorry, Your browser does not support audio.
-        </audio>
-    {% endfor %}
+    <section class="audio">
+        <h1>Audio</h1>
+        <div class="content">
+            {% for audio in audios %}
+                <audio src="/assets/audio/{{ audio }}" preload="metadata" controls> {# controlsList="play timeline volume playbackSpeed" #}
+                    Sorry, Your browser does not support audio.
+                </audio>
+            {% endfor %}
+        </div>
+    </section>
 {% endif%}
 
 {% if mapLinks is defined %}
-    {% for link in mapLinks %}
-        <iframe width="100%" height="100%" id="vid" frameborder="0" allowfullscreen="" style="display:block;" src="{{ link }}"></iframe>
-    {% endfor %}
+    <section class="map">
+        <h1>Map</h1>
+        <div class="content">
+            {% for link in mapLinks %}
+                <iframe width="100%" height="315" src="{{ link }}" title="Maps" frameborder="0" allow="clipboard-write;"></iframe>
+            {% endfor %}
+        </div>
+    </section>
 {% endif%}
+
+{% if connectedProjects is defined %}
+    <section class="connectedProjects">
+        <h1>Connected Projects</h1>
+        <div class="content cardContainer">
+            {% for projectName in connectedProjects %}
+                {% set project = collections.project | find(projectName) %}
+                {% include 'project-card.njk' %}
+            {% endfor %}
+        </div>
+    </section>
+{% endif %}

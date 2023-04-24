@@ -1,7 +1,9 @@
+@import 'variables';
+
 footer {
     position: sticky;
     bottom: 0;
-    padding: 5px;
+    padding: $defaultOffset;
     z-index: 2;
     background-color: $defaultBackgroundColor;
     border-top: $defaultElementBorder;

@@ -32,6 +32,10 @@ module.exports = function (eleventyConfig) {
     return str.toUpperCase();
   });
 
+  eleventyConfig.addFilter("find", function find(collection = [], title = "") {
+    return collection.find(project => project.data.title[0].toLowerCase() === title.toLowerCase());
+  });
+
   eleventyConfig.addPassthroughCopy('./src/assets');
   eleventyConfig.addPassthroughCopy('./src/scripts');
 

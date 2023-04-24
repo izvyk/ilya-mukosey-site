@@ -3,12 +3,14 @@
 header {
     position: sticky;
     display: flex;
-    align-items: center;
-    padding: 5px;
+    padding: $defaultOffset;
+    gap: 10px;
     top: 0;
-    z-index: 2;
+    z-index: 3;
     background-color: $defaultBackgroundColor;
     border-bottom: $defaultElementBorder;
+    height: $headerHeight;
+    box-sizing: border-box;
 
     // h1 {
     //     font-size: 35px;
@@ -17,20 +19,25 @@ header {
     //     margin: 0;
     // }
 
-    a:hover, a:focus {
-        #creature-left {
-            x: 9;
+    #logoLink { 
+        aspect-ratio: 1;
+
+        &:hover, &:focus {
+            #creature-left {
+                x: 9;
+            }
+            svg {
+                -moz-transform: scaleX(-1);
+            }
         }
     }
 
     svg {
-        height: 50px;
+        height: 100%;
+        width: auto;
     }
 
-    .headerLinks {
-        align-self: stretch;
-
-        padding-left: 10px;
+    .headerLinksContainer {
         display: flex;
         flex-flow: column;
         justify-content: space-between;
@@ -38,6 +45,6 @@ header {
     }
 
     .languageSwitcher {
-        margin: 0 0 0 auto;
+        margin: auto 0 auto auto;
     }
 }
