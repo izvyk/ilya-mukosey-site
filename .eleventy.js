@@ -32,8 +32,23 @@ module.exports = function (eleventyConfig) {
     return str.toUpperCase();
   });
 
-  eleventyConfig.addFilter("find", function find(collection = [], title = "") {
-    return collection.find(project => project.data.title[0].toLowerCase() === title.toLowerCase());
+  eleventyConfig.addFilter("findAll", function findAll(collection = [], names = []) {
+    let result = [];
+    names.forEach(name => {
+      let found = collection.find(project => project.data.title[0].toLowerCase() === name.toLowerCase());
+      if (found) {
+        result.push(found);
+      }
+    });
+    return result.length ? result : null;
+  });
+
+  eleventyConfig.addFilter("findByCategory", function find(collection = [], category = "", ...namesToExclude) {
+    return collection.filter(project => project.data.categories.includes(category) && !namesToExclude.includes(project.data.title[0]));
+  });
+
+  eleventyConfig.addFilter("keepOnly", function keepOnly(collection = [], number) {
+    return collection.slice(0, number);
   });
 
   eleventyConfig.addPassthroughCopy('./src/assets');

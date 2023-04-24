@@ -58,14 +58,21 @@ style: '/styles/project.css'
             {% endfor %}
         </div>
     </section>
-{% endif%}
+{% endif %}
 
-{% if connectedProjects is defined %}
+{% if connectedProjectsNames %}
+    {% set connectedProjects = collections.project | findAll(connectedProjectsNames) %}
+{% endif %}
+
+{% if (not connectedProjects) and categories %}
+    {% set connectedProjects = collections.project | findByCategory(categories[0], title[0]) | keepOnly(6) %}
+{% endif %}
+
+{% if connectedProjects %}
     <section class="connectedProjects">
         <h1>Connected Projects</h1>
         <div class="content cardContainer">
-            {% for projectName in connectedProjects %}
-                {% set project = collections.project | find(projectName) %}
+            {% for project in connectedProjects %}
                 {% include 'project-card.njk' %}
             {% endfor %}
         </div>
