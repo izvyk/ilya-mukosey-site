@@ -43,8 +43,7 @@ $imageContainerSize: 125px;
         }
     }
 
-    &.active a,
-    a:focus-visible {
+    &.active a {
         color: $linkActiveColor;
     }
 
@@ -73,8 +72,8 @@ $imageContainerSize: 125px;
         }
     }
 
-    &.active,
-    &:focus-within {
+    &:focus-within, // TODO: BUG - there is no focus-visible-within
+    &.active {
         div.imageContainer {
             .A {
                 r: 77%;

@@ -35,15 +35,6 @@ section {
         margin: -1px -1px $defaultOffset -1px;// 1 left and right = chrome buggy render workaround
         border-bottom: 1px dashed #000;
         z-index: 2;
-
-        // &:before {
-        //     content: '';
-        //     width: 100%;
-        //     position: absolute;
-        //     bottom: 0;
-        //     left: 0;
-        //     // box-sizing: border-box;
-        // }
     }
 
     ul {

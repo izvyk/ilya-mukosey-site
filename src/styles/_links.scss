@@ -11,14 +11,9 @@ a {
         color: $linkActiveColor;
 
         &::before {
-        transform: scaleX(1);
-        background-color: $linkActiveColor;
+            transform: scaleX(1);
+            background-color: $linkActiveColor;
         }
-    }
-
-    &:focus-visible {
-        color: $linkActiveColor;
-        outline: $defaultFocusOutline;
     }
 
     &::before {
@@ -31,5 +26,10 @@ a {
         background-color: $linkInactiveColor;
         transform: scaleX(0);
         transition: $defaultTransitionTime ease-out;
+    }
+
+    &:focus-visible {
+        color: $linkActiveColor;
+        outline: $defaultFocusOutline;
     }
 }
