@@ -1,6 +1,6 @@
 @import 'variables';
 
-$imageContainerSize: 120px;
+$imageContainerSize: 125px;
 
 .cardContainer {
     position: relative;
@@ -15,6 +15,7 @@ $imageContainerSize: 120px;
     width: $imageContainerSize;
     box-sizing: border-box;
     overflow-wrap: break-word;
+    text-align: center;
 
     .imageContainer {
         position: relative;
@@ -49,8 +50,9 @@ $imageContainerSize: 120px;
 
     a {
         position: static;
-        display: inline-block;
         padding: 2px;
+        max-width: 100%;
+        box-sizing: border-box;
 
         span {
             position: absolute;

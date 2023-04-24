@@ -11,6 +11,10 @@ main {
     position: relative;
 }
 
+iframe {
+    max-width: 100%;
+}
+
 .cardContainer {
     justify-content: start;
 }
