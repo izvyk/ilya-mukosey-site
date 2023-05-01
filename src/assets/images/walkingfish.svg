@@ -16,7 +16,7 @@
     <use id="leg1" href="#leg">
         <animate 
             attributeName="x"
-            values="0;0;1;0;"
+            values="0;0;1;"
             dur="0.6s"
             repeatCount="indefinite"
             calcMode="discrete"
@@ -25,7 +25,7 @@
     <use id="leg2" x="3" href="#leg">
         <animate 
             attributeName="x"
-            values="3;4;4;3;"
+            values="3;4;4;"
             dur="0.6s"
             repeatCount="indefinite"
             calcMode="discrete"
@@ -34,7 +34,7 @@
     <use id="leg3" x="7" href="#leg">
         <animate 
             attributeName="x"
-            values="7;7;8;7;"
+            values="7;7;8;"
             dur="0.6s"
             repeatCount="indefinite"
             calcMode="discrete"
@@ -43,7 +43,7 @@
     <use id="leg4" x="10" href="#leg">
         <animate 
             attributeName="x"
-            values="10;11;11;10;"
+            values="10;11;11;"
             dur="0.6s"
             repeatCount="indefinite"
             calcMode="discrete"
@@ -82,7 +82,7 @@
         <use href="#row" x="-7"/>
         <animate 
             attributeName="x"
-            values="0;1;1;0;"
+            values="0;1;1;"
             dur="0.6s"
             repeatCount="indefinite"
             calcMode="discrete"
