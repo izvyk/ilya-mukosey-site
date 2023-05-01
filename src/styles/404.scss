@@ -10,6 +10,11 @@ main {
     align-items: center;
     flex-wrap: wrap;
     gap: 40px;
+    min-width: 270px;
+
+    @media only screen and (max-width: 600px) {
+        flex-flow: column;
+    }
 }
 
 svg {
