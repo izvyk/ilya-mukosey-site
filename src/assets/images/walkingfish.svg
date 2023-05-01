@@ -15,34 +15,38 @@
     
     <use id="leg1" href="#leg">
         <animate 
-        attributeName="x"
-        values="0;0;1;0;0"
-        dur=".6s"
-        repeatCount="indefinite"
+            attributeName="x"
+            values="0;0;1;0;"
+            dur="0.6s"
+            repeatCount="indefinite"
+            calcMode="discrete"
         />
     </use>
     <use id="leg2" x="3" href="#leg">
         <animate 
-        attributeName="x"
-        values="3;4;4;3;3"
-        dur=".6s"
-        repeatCount="indefinite"
+            attributeName="x"
+            values="3;4;4;3;"
+            dur="0.6s"
+            repeatCount="indefinite"
+            calcMode="discrete"
         />
     </use>
     <use id="leg3" x="7" href="#leg">
         <animate 
-        attributeName="x"
-        values="7;7;8;7;7"
-        dur=".6s"
-        repeatCount="indefinite"
+            attributeName="x"
+            values="7;7;8;7;"
+            dur="0.6s"
+            repeatCount="indefinite"
+            calcMode="discrete"
         />
     </use>
     <use id="leg4" x="10" href="#leg">
         <animate 
             attributeName="x"
-            values="10;11;11;10;10"
-            dur=".6s"
+            values="10;11;11;10;"
+            dur="0.6s"
             repeatCount="indefinite"
+            calcMode="discrete"
         />
     </use>
 
@@ -78,9 +82,10 @@
         <use href="#row" x="-7"/>
         <animate 
             attributeName="x"
-            values="0;1;1;0;0"
-            dur=".6s"
+            values="0;1;1;0;"
+            dur="0.6s"
             repeatCount="indefinite"
+            calcMode="discrete"
         />
     </svg>
 </svg>
