@@ -2,18 +2,16 @@ window.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.card').forEach(card => {
         let span = card.querySelector('a span');
         span.addEventListener('mouseenter', _ => {
-            card.classList.add('active');
-            document.querySelectorAll('.menuCategories a').forEach(cat => {
-                if (card.dataset.categories.includes(cat.dataset.category)) {
-                    cat.classList.add('active');
+            document.querySelectorAll('.menuCategories a').forEach(menuItem => {
+                if (card.dataset.categories.includes(menuItem.dataset.category)) {
+                    menuItem.classList.add('selected');
                 }
             });
         });
         span.addEventListener('mouseleave', _ => {
-            card.classList.remove('active');
-            document.querySelectorAll('.menuCategories a').forEach(cat => {
-                if (card.dataset.categories.includes(cat.dataset.category)) {
-                    cat.classList.remove('active');
+            document.querySelectorAll('.menuCategories a').forEach(menuItem => {
+                if (card.dataset.categories.includes(menuItem.dataset.category)) {
+                    menuItem.classList.remove('selected');
                 }
             });
         });
@@ -23,17 +21,17 @@ window.addEventListener('DOMContentLoaded', () => {
         a.addEventListener('click', e => e.preventDefault());
 
         a.addEventListener('mouseenter', _ => {
-            document.querySelectorAll(`.card[data-categories*=${a.dataset.category}]`).forEach(card => card.classList.add('active'));
+            document.querySelectorAll(`.card[data-categories*=${a.dataset.category}]`).forEach(card => card.classList.add('selected'));
         });
         a.addEventListener('mouseout', _ => {
-            document.querySelectorAll(`.card[data-categories*=${a.dataset.category}]`).forEach(card => card.classList.remove('active'));
+            document.querySelectorAll(`.card[data-categories*=${a.dataset.category}]`).forEach(card => card.classList.remove('selected'));
         });
 
         a.addEventListener('focus', _ => {
-            document.querySelectorAll(`.card[data-categories*=${a.dataset.category}]`).forEach(card => card.classList.add('active'));
+            document.querySelectorAll(`.card[data-categories*=${a.dataset.category}]`).forEach(card => card.classList.add('selected'));
         });
         a.addEventListener('focusout', _ => {
-            document.querySelectorAll(`.card[data-categories*=${a.dataset.category}]`).forEach(card => card.classList.remove('active'));
+            document.querySelectorAll(`.card[data-categories*=${a.dataset.category}]`).forEach(card => card.classList.remove('selected'));
         });
     })
 });

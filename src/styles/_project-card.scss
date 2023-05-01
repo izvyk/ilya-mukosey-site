@@ -43,10 +43,6 @@ $imageContainerSize: 125px;
         }
     }
 
-    &.active a {
-        color: $linkActiveColor;
-    }
-
     a {
         position: static;
         padding: 2px;
@@ -72,9 +68,14 @@ $imageContainerSize: 125px;
         }
     }
 
-    &:focus-within, // TODO: BUG - there is no focus-visible-within
-    &.active {
-        div.imageContainer {
+    &:focus-within, // TODO: BUG - there is no focus-visible-within (dnd focus bug)
+    &:hover,
+    &.selected {
+        a {
+            color: $linkActiveColor;
+        }
+
+        .imageContainer {
             .A {
                 r: 77%;
             }
