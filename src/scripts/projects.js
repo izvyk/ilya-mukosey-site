@@ -33,5 +33,5 @@ window.addEventListener('DOMContentLoaded', () => {
         a.addEventListener('focusout', _ => {
             document.querySelectorAll(`.card[data-categories*=${a.dataset.category}]`).forEach(card => card.classList.remove('selected'));
         });
-    })
+    });
 });

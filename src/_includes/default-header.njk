@@ -8,9 +8,9 @@
 {# <h1>MUKOSEY.COM /</h1> #}
 <div class="headerLinksContainer">
     {% for section in ['projects', 'awards', 'press'] %}
-        <a href="/{{ section }}" {% if section in page.url %} class="active" {% endif %}>{{ section | toUpper }}</a>
+        <a href="/{{ section }}" {% if section in page.url %} class="selected" {% endif %}>{{ section | toUpper }}</a>
     {% endfor %}
 </div>
 
 {# <span>mukosey{{page.url}}</span> #}
-<p class="languageSwitcher"> <a href="">Language</a></p>
+<p class="languageSwitcher"><a href="">Language</a></p>
