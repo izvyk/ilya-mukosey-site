@@ -38,7 +38,7 @@ $imageContainerSize: 125px;
             height: 100%;
 
             circle {
-                transition: $defaultTransitionTime;
+                transition: $defaultTransitionTime ease-out;
             }
         }
     }
