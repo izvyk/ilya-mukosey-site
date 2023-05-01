@@ -15,8 +15,19 @@ script: '/scripts/projects.js'
 {% endblock %}
 
 {% block footer %}
+    {% set categories = [
+        ['buildings', 'Buildings'],
+        ['territories', 'Territories'],
+        ['transport', 'Transport'],
+        ['interiors', 'Interiors'],
+        ['smallObjects', 'Small objects'],
+        ['exhibitionsAndFestivals', 'Exhibitions & festivals'],
+        ['concepts', 'Concepts'],
+        ['media', 'Media'],
+        ['educationAndCulture', 'Education & culture']]
+    %}
     <div class="menuCategories">
-        {% for category, name in [['buildings', 'Buildings'], ['territories', 'Territories'], ['transport', 'Transport'], ['interiors', 'Interiors'], ['smallObjects', 'Small objects'], ['exhibitionsAndFestivals', 'Exhibitions & festivals'], ['concepts', 'Concepts'], ['media', 'Media'], ['educationAndCulture', 'Education & culture']] %}
+        {% for category, name in categories %}
             <a href="#" data-category="{{ category }}">{{ name }}</a>
         {% endfor %}
     </div>
