@@ -1,15 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 15">
-    <g id="ground">
-        <path id="row" d="M2 14v1h2v-1zm2 -1v1h2v-1zm2 1v1h2v-1zm3 0v1h2v-1zm-1 -1v1h1v-1zm3 0v1h1v-1z"/>
-        <use href="#row" x="-7"/>
-        <use href="#row" x="10"/>
-        <use href="#row" x="17"/>
-        <use href="#row" x="24"/>
-        <use href="#row" x="31"/>
-    </g>
-    <path d="M9 4h2v1h1v-1h6v-2h6v2h6v6h-18v-1h-1v1h-2v-2h1v-2h-1z"/>
-    <path id="legs13" d="M14 9v3h2v-1h-1v-2z m7 0v3h2v-1h-1v-2z"/>
-    <path id="legs24" d="M17 9v3h2v-1h-1v-2z m7 0v3h2v-1h-1v-2z"/>
-    <path fill="#fff" d="M13 5h16v4h-16z m-2 1v2h1v-2z m8 -3v1h4v-1z"/>
-    <path d="M27 6v1h1v-1zm-1 2v2h1v-2"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 15"><g id="ground"><path id="A" d="M2 14v1h2v-1zm2-1v1h2v-1zm2 1v1h2v-1zm3 0v1h2v-1zm-1-1v1h1v-1zm3 0v1h1v-1z"/><use href="#A" x="-7"/><use href="#A" x="10"/><use href="#A" x="17"/><use href="#A" x="24"/><use href="#A" x="31"/></g><path d="M9 4h2v1h1V4h6V2h6v2h6v6H12V9h-1v1H9V8h1V6H9z"/><path id="legs13" d="M14 9v3h2v-1h-1V9zm7 0v3h2v-1h-1V9z"/><path id="legs24" d="M17 9v3h2v-1h-1V9zm7 0v3h2v-1h-1V9z"/><path fill="#fff" d="M13 5h16v4H13zm-2 1v2h1V6zm8-3v1h4V3z"/><path d="M27 6v1h1V6zm-1 2v1.5h1V8"/></svg>
