@@ -24,10 +24,10 @@ header {
 
         &:hover, &:focus-visible {
             #creature-left {
-                x: 9;
+                transform: translateX(-8px);
             }
-            svg {
-                -moz-transform: scaleX(-1);
+            #creature-right {
+                transform: translateX(8px);
             }
         }
     }
