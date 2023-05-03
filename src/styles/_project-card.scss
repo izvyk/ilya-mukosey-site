@@ -6,8 +6,9 @@ $imageContainerSize: 125px;
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 10px;
+    padding: $defaultOffset;
 }
 
 .card {
