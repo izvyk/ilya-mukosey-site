@@ -2,6 +2,7 @@ const eleventySass = require('eleventy-sass');
 // const htmlmin = require('html-minifier');
 // const posthtml = require('posthtml');
 // const uglify = require('posthtml-minify-classnames');
+const { minify } = require("terser");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventySass);
@@ -51,8 +52,21 @@ module.exports = function (eleventyConfig) {
     return collection.slice(0, number);
   });
 
+  eleventyConfig.addNunjucksAsyncFilter("jsmin", async function (
+    code,
+    callback
+  ) {
+    try {
+      const minified = await minify(code);
+      callback(null, minified.code);
+    } catch (err) {
+      console.error("Terser error: ", err);
+      // Fail gracefully.
+      callback(null, code);
+    }
+  });
+
   eleventyConfig.addPassthroughCopy('./src/assets');
-  eleventyConfig.addPassthroughCopy('./src/scripts');
 
   return {
     dir: {

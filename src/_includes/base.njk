@@ -11,20 +11,17 @@
     {% if style is defined %}
         <link rel="stylesheet" type="text/css" href="{{ style }}">
     {% endif %}
-    {% if script is defined %}
-        <script defer src="{{ script }}"></script>
-    {% endif %}
 </head>
 <body>
     <header>
         {% block header %}
-            {% include 'default-header.njk' %}
+        {% include 'default-header.njk' %}
         {% endblock %}
     </header>
 
     <main>
         {% block content %}
-            {{ content | safe }}
+        {{ content | safe }}
         {% endblock %}
     </main>
 
@@ -33,5 +30,16 @@
             Default footer
         {% endblock %}
     </footer>
+
+    {% if script is defined %}
+        {% set js %}
+            {% include "scripts/" + script %}
+        {% endset %}
+        <script>
+            {{ js | jsmin | safe }}
+        </script>
+    {% endif %}
+
 </body>
+
 </html>
