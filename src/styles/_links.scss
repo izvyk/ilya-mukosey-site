@@ -10,13 +10,15 @@ a {
     &:hover, &.selected {
         color: $linkActiveColor;
 
-        &::before {
-            transform: scaleX(1);
-            background-color: $linkActiveColor;
+        &:not(.noUnderline) {
+            &::before {
+                transform: scaleX(1);
+                background-color: $linkActiveColor;
+            }
         }
     }
 
-    &::before {
+    &:not(.noUnderline)::before {
         content: '';
         position: absolute;
         width: 100%;
