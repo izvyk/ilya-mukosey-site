@@ -53,15 +53,23 @@ footer {
         overflow: hidden;
 
         #legs13 {
-            animation: walk-start .6s steps(2) infinite;
+            animation: .6s forwards infinite walk-start steps(2);
         }
 
         #legs24 {
-            animation: walk-end .6s steps(2) infinite;
+            animation: .6s forwards infinite walk-end steps(2);
         }
 
         #ground {
-            animation: walk-end .6s steps(2) infinite;
+            animation: .6s forwards infinite walk-end steps(2);
         }
+
+        // &:hover {
+        //     #legs13,
+        //     #legs24,
+        //     #ground {
+        //         animation-play-state: paused;
+        //     }
+        // }
     }
 }
