@@ -1,6 +1,7 @@
 @import 'variables';
 
 $imageContainerSize: 125px;
+$smallImageContainerSize: 100px;
 
 .cardContainer {
     position: relative;
@@ -18,9 +19,17 @@ $imageContainerSize: 125px;
     overflow-wrap: break-word;
     text-align: center;
 
+    @media only screen and (max-width: 600px) {
+        width: $smallImageContainerSize;
+    }
+
     .imageContainer {
         position: relative;
         height: $imageContainerSize;
+        
+        @media only screen and (max-width: 600px) {
+            height: $smallImageContainerSize;
+        }
 
         img {
             display: block;
