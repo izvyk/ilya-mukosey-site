@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.card').forEach(card => {
-        let span = card.querySelector('a span');
+        const span = card.querySelector('a span');
         span.addEventListener('mouseenter', _ => {
             document.querySelectorAll('.menuCategories a').forEach(menuItem => {
                 if (card.dataset.categories.includes(menuItem.dataset.category)) {
