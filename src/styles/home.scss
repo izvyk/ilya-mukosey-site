@@ -4,22 +4,107 @@
 @import 'variables';
 @import 'links';
 
-body {
+$linksPadding: 10px;
+$accentColor: #ccec00;
+
+main {
+    min-height: calc(100vh - 2 * $defaultOffset);
+    position: relative;
+    margin: $defaultOffset;
+    font-family: 'Iosevka Web';
+}
+
+.logoAndFish {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
+    top: 50%;
+    left: 50%;
+}
+
+.inversion {
+    background-color: black;
+    color: $accentColor;
+}
+
+p {
+    padding: $linksPadding;
+    border: 1px solid black;
     width: fit-content;
-    height: 100vh;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
+    margin: 0;
 }
 
-header {
-    padding: $defaultOffset;
+.upperLeft {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-// .containerContacts {
-//     text-align: start;
+.lowerLeft {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.upperRight {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    right: 0;
+}
+
+.lowerRight {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    align-content: end;
+
+    p {
+        margin-left: auto;
+        margin-right: 0;
+    }
+}
+
+// p, .logoAndFish {
+//     background-color: white;
+// }
+
+// .lines {
+//     position: absolute;
+//     top: 30px;
+//     bottom: 30px;
+//     left: 30px;
+//     right: 30px;
+//     z-index: -1;
+
+//     svg {
+//         height: 100%;
+//         width: 100%;
+//     }
+
+//     .line {
+//         width: 1px;
+//         background-color: black;
+//         // height: 100%;
+//         position: absolute;
+
+//         &.first {
+//             top: 0;
+//             bottom: 0;
+//             left: 80px;
+//         }
+
+//         &.second {
+//             top: 80px;
+//             height: 50%;
+//             left: 80px;
+//             transform: rotate(-45deg);
+//             transform-origin: top;
+//         }
+//     }
+
 // }
 
 @keyframes walk-start {
@@ -46,30 +131,27 @@ header {
     }
 }
 
-footer {
-    padding: $defaultOffset;
+.svgContainer {
+    overflow: hidden;
+    padding-bottom: 2 * $defaultOffset;
 
-    .svgContainer {
-        overflow: hidden;
-
-        #legs13 {
-            animation: .6s forwards infinite walk-start steps(2);
-        }
-
-        #legs24 {
-            animation: .6s forwards infinite walk-end steps(2);
-        }
-
-        #ground {
-            animation: .6s forwards infinite walk-end steps(2);
-        }
-
-        // &:hover {
-        //     #legs13,
-        //     #legs24,
-        //     #ground {
-        //         animation-play-state: paused;
-        //     }
-        // }
+    #legs13 {
+        animation: .6s forwards infinite walk-start steps(2);
     }
+
+    #legs24 {
+        animation: .6s forwards infinite walk-end steps(2);
+    }
+
+    #ground {
+        animation: .6s forwards infinite walk-end steps(2);
+    }
+
+    // &:hover {
+    //     #legs13,
+    //     #legs24,
+    //     #ground {
+    //         animation-play-state: paused;
+    //     }
+    // }
 }
