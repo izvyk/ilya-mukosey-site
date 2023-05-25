@@ -5,28 +5,75 @@ style: 'home.css'
 
 {% extends 'base.njk' %}
 
-{% block header %}
-    {% include './assets/images/title.svg' %}
+{% block head %}
+   {{ super() }}
+    <link href="https://pvinis.github.io/iosevka-webfont/3.4.1/iosevka.css" rel="stylesheet" />
 {% endblock %}
 
+{% block header %}{% endblock %}
+{% block footer %}{% endblock %}
+
 {% block content %}
-    <section>
+    {# <div class="lines">
+        <div class="line first"></div>
+        <div class="line second"></div>
+        {% include './assets/images/m-lines.svg' %}
+    </div> #}
+
+    <div class="logoAndFish">
+        <div class="svgContainer">
+            {% include './assets/images/walkingfish.svg' %}
+        </div>
+        {% include './assets/images/title.svg' %}
+    </div>
+
+    <div class="upperLeft">
+        <p class="inversion">
+            Илья Мукосей / Ilya Mukosey
+        </p>
+        <p>
+            <a href="projects">ПРОЕКТЫ</a>
+            /
+            <a href="projects">PROJECTS</a>
+        </p>
+        <p>
+            <a href="awards">НАГРАДЫ</a>
+            /
+            <a href="awards">AWARDS</a>
+        </p>
+        <p>
+            <a href="press">ПРЕССА</a>
+            /
+            <a href="press">PRESS</a>
+        </p>
+    </div>
+
+    <div class="lowerLeft">
+        <p>Telegram: <a href="https://t.me/IlyaMukosey" target="_blank">@IlyaMukosey</a></p>
+        <p>WhatsApp: <a href="https://wa.me/+79037361544" target="_blank">+7 903 7361544</a></p>
+        <p>Mobile: <a href="tel:+49 1522 8084502">+49 1522 8084502</a></p>
+    </div>
+
+    <div class="upperRight">
+        {% include './assets/images/favicon.svg' %}
+    </div>
+
+    <div class="lowerRight">
+        <p>E-mail: <a href="mailto:info@mukosey.com" target="_blank">info@mukosey.com</a></p>
+        <p class="inversion">LinkedIn: <a class="inversion" href="https://www.linkedin.com/in/mukosey/" target="_blank">linkedin.com/in/mukosey</a></p>
+    </div>
+
+    {# <p>
         <p>Илья Мукосей / Ilya Mukosey</p>
         <p><a href="projects">ПРОЕКТЫ</a> / <a href="awards">НАГРАДЫ</a> / ПРЕССА</p>
         <p>PROJECTS / AWARDS / PRESS</p>
-    </section>
+    </p>
 
-    <section class="containerContacts">
+    <p class="containerContacts">
         <p>E-mail: <a href="mailto:info@mukosey.com" target="_blank">info@mukosey.com</a></p>
         <p>Telegram: <a href="https://t.me/IlyaMukosey" target="_blank">@IlyaMukosey</a></p>
         <p>WhatsApp: <a href="https://wa.me/+79037361544" target="_blank">+7 903 7361544</a></p>
         <p>Mobile: <a href="tel:+49 1522 8084502">+49 1522 8084502</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/mukosey/" target="_blank">linkedin.com/in/mukosey</a></p>
-    </section>
-{% endblock %}
-
-{% block footer %}
-    <div class="svgContainer">
-        {% include './assets/images/walkingfish.svg' %}
-    </div>
+    </p> #}
 {% endblock %}
